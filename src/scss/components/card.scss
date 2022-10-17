@@ -1,6 +1,129 @@
 @use '../util' as *;
 
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(30);
+
+    @include breakpoint(medium) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint(large) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
 .card {
-    padding: rem(20);
+    background-color: var(--dark-card);
+    color: var(--dark-text1);
+    text-align: center;
+    padding: rem(25);
+    border-radius: rem(5);
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+    &--facebook {
+        border-top: rem(5) solid var(--facebook);
+    }
+
+    &--twitter {
+        border-top: rem(5) solid var(--twitter);
+    }
+
+    &--instagram {
+        padding-top: rem(30);
+
+        &::before {
+            content: "";
+            height: rem(5);
+            width: 100%;
+            background: var(--instagram-start);
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    &--youtube {
+        border-top: rem(5) solid var(--youtube);
+    }
+
+    &__platform {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: rem(28);
+    }
+
+    &__icon {
+        margin-right: rem(8);
+
+        &--facebook {}
+
+        &--twitter {}
+
+        &--intagram {}
+
+        &--youtube {}
+    }
+
+    &__username {
+        font-size: rem(12);
+        font-weight: 700;
+    }
+
+    &__followers {
+        margin-bottom: rem(25);
+    }
+
+    &__count {
+        color: var(--light-bg);
+        line-height: 1;
+        margin-bottom: rem(4);
+        letter-spacing: rem(-2);
+
+        &--big {
+            font-size: rem(56);
+            font-weight: 700;
+        }
+
+        &--small {}
+    }
+
+    &__label {
+        color: var(--dark-text1);
+        font-size: rem(12);
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: rem(5);
+    }
+
+    &__change {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: rem(12);
+        font-weight: 700;
+
+        &--up {
+            color: var(--limegreen);
+        }
+
+        &--down {
+            color: var(--brightred);
+        }
+
+        img {
+            margin-right: rem(4);
+        }
+
+    }
+
+
+
+
+
 }
