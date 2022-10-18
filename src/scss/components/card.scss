@@ -24,6 +24,12 @@
     text-align: center;
     overflow: hidden;
 
+
+    &:hover {
+        background-color: var(--dark-card-hover);
+    }
+
+
     &--facebook {
         border-top: rem(5) solid var(--facebook);
     }
