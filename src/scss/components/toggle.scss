@@ -11,23 +11,14 @@
     label {
         font-size: rem(14);
         align-self: center;
+        font-weight: 700;
 
         &[for='dark'] {
-            grid-column: 1 / 2;
-            justify-self: end;
+            line-height: rem(24);
+            margin-right: rem(13);
         }
 
-        &[for='system'] {
-            grid-column: 1 / 4;
-            grid-row: 2 / 3;
-            justify-self: center;
-            align-self: start;
 
-        }
-
-        &[for='light'] {
-            grid-column: 3 / 4;
-        }
 
     }
 
