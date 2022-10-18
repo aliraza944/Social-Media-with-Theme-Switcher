@@ -44,6 +44,10 @@
             position: absolute;
             left: 0;
             top: 0;
+            background: linear-gradient(225deg,
+                    var(--instagram-end),
+                    var(--instagram-middle) 50.91%,
+                    var(--instagram-start) 100%);
         }
     }
 
@@ -90,7 +94,10 @@
             font-weight: 700;
         }
 
-        &--small {}
+        &--small {
+            font-size: rem(32);
+            font-weight: 700;
+        }
     }
 
     &__label {
@@ -122,7 +129,10 @@
 
     }
 
-
+    &__subtitle {
+        font-size: rem(14);
+        font-weight: 700;
+    }
 
 
 
