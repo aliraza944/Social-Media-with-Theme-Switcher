@@ -3,7 +3,7 @@
 .toggle {
     border: none;
     display: grid;
-    grid-template-columns: 1fr rem(60) 1fr;
+    grid-template-columns: 1fr rem(48);
     grid-template-rows: repeat(2, 1fr);
     gap: rem(4.8) rem(8);
     margin: 0;
