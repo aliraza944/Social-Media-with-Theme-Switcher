@@ -12,6 +12,7 @@
         font-size: rem(14);
         align-self: center;
         font-weight: 700;
+        color: var(--toggle);
 
         &[for='dark'] {
             line-height: rem(24);
@@ -35,6 +36,7 @@
         margin: 0 rem(-4) 0 rem(2);
         height: rem(24);
         width: rem(20);
+        font-weight: 700;
 
         &:focus~.toggle__button {
             border: rem(2) solid white;
@@ -49,7 +51,7 @@
         position: absolute;
         width: 100%;
         top: 0;
-        background: linear-gradient(225deg, var(--toggle-bg-end) 0%, var(--toggle-bg-start) 98.02%);
+        background: var(--toggle-bg);
         pointer-events: none;
     }
 
@@ -63,7 +65,7 @@
         width: rem(16);
         height: rem(16);
         border-radius: 50%;
-        background-color: var(--dark-bg);
+        background-color: var(--toggle-button);
         transition: all 150ms ease-in-out;
 
     }
