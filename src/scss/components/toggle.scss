@@ -24,7 +24,7 @@
 
 
     &__wrapper {
-        grid-column: 2 / 3;
+        grid-column: 2 / 2;
         grid-row: 1 / 2;
         height: rem(24);
         position: relative;
@@ -32,9 +32,9 @@
 
     input[type='radio'] {
         opacity: 0;
-        margin: 0 rem(-2) 0 0;
+        margin: 0 rem(-4) 0 rem(2);
         height: rem(24);
-        width: rem(18);
+        width: rem(20);
 
         &:focus~.toggle__button {
             border: rem(2) solid white;
